@@ -1,0 +1,131 @@
+.gameboy {
+    position: relative;
+    display: block;
+    margin: 1.25em auto;
+    width:28.5em;
+    height: 43.5em;
+    background: #eee;
+    border-radius: 0.6em 0.6em 3.75em 0.6em;
+    box-shadow:0.3em 0.3em rgba(0,0,0,0.1);
+}
+ .gameboy .pantalla-cont {
+    position: relative;
+    top: 3.75em;
+    left: 3em;
+     width: 21.4em;
+    height: 17em;
+    margin-bottom: 3.6em;
+     background-color: rgb(126, 124, 124);
+    border-radius: 0.8em 0.8em 3.2em 0.8em;
+ }
+ .gameboy .pantalla-cont .luz {
+    
+    position: absolute;
+    width: 0.6em;
+    height: 0.6em;
+    top:6.25em;
+    left: 1.25em;
+    border-radius: 100%;
+    background-color: #b98181;
+    -webkit-transition: background-color 300ms linear;
+    -moz-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    -o-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+}
+.gameboy .screen-cont  {
+    position: relative;
+    top: 1.2em;
+    left: -0.6em;
+    font-size: 0.5em;
+    font-family: sans-serif;
+    color: #b3b3b3;
+}
+
+.gameboy .pantalla-cont .pantalla-interior {
+    position: relative;
+    top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #bdae58;
+    width: 14em;
+    height: 12.8em;
+    box-shadow: inset 0.2em 0.2em rgba(0,0,0,0.15);
+}
+
+ .gameboy .controles-cont {
+    display: block;
+    position: relative;
+    margin-top: 5.6em;
+}
+
+.gameboy .controles-cont .btn-direction {
+    position: relative;
+    margin-left: 2.5em;
+    top: 3.75em;
+}
+.gameboy .controles-cont .btn-direction .vertical {
+    position: absolute;
+    left:1.8em ;
+    width: 1.8em;
+    height: 5.6em;
+    background: #444;
+    border-radius:0.3em;
+}
+.gameboy .controles-cont .btn-direction .horizontal {
+    position: absolute;
+    left: 1.8em;
+    width: 1.8em;
+    height: 5.6em;
+    background: #444;
+    border-radius: 0.3em;
+    transform: rotate(90deg);
+}
+
+    
+.gameboy .controles-cont .btn-AB {
+    position: absolute;
+    top: 4.5em;
+    left: 15.16em;
+    width: 8.1em;
+    height: 3.75em;
+    background: #b84f4f;
+    border-radius: 1.8em;
+    -webkit-transform: rotate(-25deg)
+}
+   
+
+.gameboy .controles-cont .btn-star-select {
+    position: absolute;
+    top: 13em;
+    left: 8.75em;
+    height: 0.75em;
+    width: 60px;
+    background: #999;
+    border-radius: 0.6em;
+    -webkit-transform: rotate(-25deg);
+    box-shadow: 3.5em 1.6em #999, 0 0 0 0.3em #dfdfdf, 3.6em 1.7em 0 0.313em #dfdfdf;
+}
+
+
+.gameboy .altavoz {
+    position: relative;
+    height:4.3em;
+    width: 0.5em;
+    top: 16.20em;
+    left:18.75em ;
+    background: #767c77;
+    border-radius: 0.25em;
+    -webkit-transform: rotate(-25deg);
+    box-shadow: 1.25em 0 #767c77, 2.5em 0 #767c77, 3.75em 0 #767c77, 5em 0 #767c77, 6.25em 0 #767c77;
+}
+
+.phones {
+    position: absolute;
+    bottom: 1.5em;
+    left: 50%;
+    padding: 0.2em 0.3em;
+    transform: translateX(-50%);
+    background-color: #afaaaa;
+    border-radius: 1.9em;
+}
