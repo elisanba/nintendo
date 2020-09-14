@@ -4,8 +4,8 @@
     display: block;
     margin: 1.25em auto;
     width:28.5em;
-    height: 43.5em;
-    background: #e8e8e8;
+    height: 47.5em;
+    background: #d7e7ee;
     border-radius: 0.6em 0.6em 3.75em 0.6em;
     box-shadow:0.3em 0.3em rgba(0,0,0,0.1);
 }
@@ -30,11 +30,7 @@
     left: 1.25em;
     border-radius: 100%;
     background-color: #d15454;
-    -webkit-transition: background-color 300ms linear;
-    -moz-transition: background-color 300ms linear;
-    -ms-transition: background-color 300ms linear;
-    -o-transition: background-color 300ms linear;
-    transition: background-color 300ms linear;
+    
 }
 .gameboy .pantalla-cont .luz .batery{
     font-size:10px;
@@ -64,6 +60,10 @@
     margin-top: 5.6em;
 }
 
+.gameboy .controles-cont.marca {
+    width: 10px;
+    height: 10px;
+}
 /*Contenedor de la cruz*/
 .gameboy .controles-cont .btn-direction {
     position: relative;
