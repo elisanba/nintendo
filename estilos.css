@@ -1,3 +1,4 @@
+/*Estilos del contenedor general*/
 .gameboy {
     position: relative;
     display: block;
@@ -8,62 +9,85 @@
     border-radius: 0.6em 0.6em 3.75em 0.6em;
     box-shadow:0.3em 0.3em rgba(0,0,0,0.1);
 }
+
+/**/
+.gameboy:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 31px;
+    border-bottom: 4px solid #e0e0e0;
+}
+
+.gameboy:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 334px;
+    height: 31px;
+    border-left: 4px solid #e0e0e0;
+    border-right: 4px solid #e0e0e0;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/*Estilos generales del contenedor parte de arriba  (pantalla) */
  .gameboy .pantalla-cont {
     position: relative;
     top: 3.75em;
     left: 3em;
-     width: 21.4em;
+    width: 21.4em;
     height: 17em;
     margin-bottom: 3.6em;
-     background-color: rgb(126, 124, 124);
+    background-color: rgb(126, 124, 124);
     border-radius: 0.8em 0.8em 3.2em 0.8em;
  }
+
+ /*Estilos para la luz*/
  .gameboy .pantalla-cont .luz {
-    
     position: absolute;
     width: 0.6em;
     height: 0.6em;
     top:6.25em;
     left: 1.25em;
     border-radius: 100%;
-    background-color: #b98181;
+    background-color: #d15454;
     -webkit-transition: background-color 300ms linear;
     -moz-transition: background-color 300ms linear;
     -ms-transition: background-color 300ms linear;
     -o-transition: background-color 300ms linear;
     transition: background-color 300ms linear;
 }
-.gameboy .screen-cont  {
-    position: relative;
-    top: 1.2em;
-    left: -0.6em;
-    font-size: 0.5em;
-    font-family: sans-serif;
-    color: #b3b3b3;
-}
 
+/*Estilos para la pantalla interior*/
 .gameboy .pantalla-cont .pantalla-interior {
     position: relative;
     top: 30px;
     margin-left: auto;
     margin-right: auto;
-    background: #bdae58;
+    background: #e2ce5e;
     width: 14em;
     height: 12.8em;
     box-shadow: inset 0.2em 0.2em rgba(0,0,0,0.15);
 }
 
+/*Titulo de parte de arriba pantalla*/
+
+/*contenedor de los botones-general*/
  .gameboy .controles-cont {
     display: block;
     position: relative;
     margin-top: 5.6em;
 }
 
+/*Contenedor de la cruz*/
 .gameboy .controles-cont .btn-direction {
     position: relative;
     margin-left: 2.5em;
     top: 3.75em;
 }
+
+/*Estilos para formar la cruz*/
 .gameboy .controles-cont .btn-direction .vertical {
     position: absolute;
     left:1.8em ;
@@ -72,6 +96,7 @@
     background: #444;
     border-radius:0.3em;
 }
+
 .gameboy .controles-cont .btn-direction .horizontal {
     position: absolute;
     left: 1.8em;
@@ -82,19 +107,20 @@
     transform: rotate(90deg);
 }
 
-    
+ /*Estilos para el boton diagonal*/   
 .gameboy .controles-cont .btn-AB {
     position: absolute;
     top: 4.5em;
     left: 15.16em;
     width: 8.1em;
     height: 3.75em;
-    background: #b84f4f;
+    background: #dfdfdf;
     border-radius: 1.8em;
     -webkit-transform: rotate(-25deg)
 }
-   
 
+   
+/*Estilos para el boton select*/
 .gameboy .controles-cont .btn-star-select {
     position: absolute;
     top: 13em;
@@ -107,7 +133,7 @@
     box-shadow: 3.5em 1.6em #999, 0 0 0 0.3em #dfdfdf, 3.6em 1.7em 0 0.313em #dfdfdf;
 }
 
-
+/*Estilos para el altavoz*/
 .gameboy .altavoz {
     position: relative;
     height:4.3em;
@@ -120,7 +146,8 @@
     box-shadow: 1.25em 0 #767c77, 2.5em 0 #767c77, 3.75em 0 #767c77, 5em 0 #767c77, 6.25em 0 #767c77;
 }
 
-.phones {
+/*Estilos boton cargador*/
+.cargador {
     position: absolute;
     bottom: 1.5em;
     left: 50%;
