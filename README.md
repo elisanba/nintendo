@@ -1,2 +1,2 @@
 # nintendo
-consola realizada con html y css
+# consola  nintendo  gameboy  creada  con  html  y  css
